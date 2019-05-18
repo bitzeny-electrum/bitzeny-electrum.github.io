@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	background: #080045 no-repeat fixed left bottom;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+}
+
+.accbox {
+    margin: 0px auto;
+    padding: 0;
+    max-width: 120px;
+}
+
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 13px 12px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #080045;
+    cursor :pointer;
+    transition: all 0.5s;
+    border: thick solid #ffffff;
+}
+
+.accbox label:hover {
+    background :#ffffff;
+    color :#080045;
+}
+
+.accbox input {
+    display: none;
+}
+
+.accbox input[type="radio"]:checked + label {
+    background : #ffffff;
+    color : #080045;
+}
+
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.cssacc:checked + label + .accshow {
+    height: auto;
+    padding: 5px;
+    color: #000000;
+    background: #ffffff;
+    opacity: 1;
+}
+
+.accbox .accshow p {
+    margin: 15px 10px
+}
+
+.header {
+	padding: 170px 30px 10px;
+}
+
+.site-title {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 7.6rem;
+	margin: 1rem 0;
+}
+
+.site-description {
+	margin-bottom: 50px;
+	color: #888;
+	font-size: 1.6rem;
+}
+
+.heading {
+	position: relative;
+	display: inline-block;
+	margin: 30px 0 15px;
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+	font-size: 4rem;
+}
+
+.heading::before,
+.heading::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid #999;
+}
+
+.heading::before {
+	bottom: 5px;
+}
+
+.about-text {
+	margin: 30px 0;
+	line-height: 2.5;
+}
+
+.about-box {
+	display: table-cell;
+}
+
+.about-others {
+	width: 100%;
+	margin-bottom: 50px;
+	table-layout:fixed;
+	display: table;
+}
+
+.about-icon {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 6rem;
+	line-height: 92px;
+}
+
+a {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.dl-wrapper {
+	width: 60%;
+	margin: 50px auto 0;
+}
+
+.dl-box {
+	display: table-cell;
+}
+
+.dl-pc,.dl-phone,.dl-others {
+	width: 100%;
+	margin-bottom: 50px;
+	table-layout:fixed;
+	display: table;
+}
+
+.dl-icon {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	border: 2px solid;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 6rem;
+	line-height: 92px;
+}
+
+.dl-text {
+	margin: 0 20px;
+	line-height: 2;
+}
+
+.footer {
+	padding: 30px 0;
+	font-size: 1.3rem;
+}
+
+p {
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+@media (max-width: 768px) {
+	body {
+		width: 90%;
+		margin: auto;
+	}
+	
+	.header {
+		padding: 100px 20px 50px;
+	}
+	
+	h1.site-title {
+		font-size: 3rem;
+	}
+	
+	.heading {
+		padding-bottom: 7px;
+		font-size: 3rem;
+	}
+
+	.heading::before {
+		bottom: 4px;
+	}
+	
+	.about-text {
+		margin: 20px 0;
+		line-height: 2;
+	}
+	.about-icon {
+		margin-bottom: 10px;
+	}
+	.about-others {
+		margin-bottom: 0;
+	}
+	.about-box {
+	        display: block;
+		margin: 20px auto;
+	}
+	
+	.dl-wrapper,.dl-box {
+		display: block;
+	}
+	
+	.dl-icon {
+		margin-bottom: 10px;
+	}
+	
+	.dl-pc,.dl-phone {
+		margin-bottom: 0;
+	}
+	.dl-box {
+		margin: 20px auto;
+	}
+	
+	.dl-text {
+		margin: 0;
+	}
+	
+	p {
+		font-size: 1.2rem;
+	}
+	
+	.phone-br::before {
+		content: "\A" ;
+		white-space: pre ;
+	}
+
+}

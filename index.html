@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>Electrum for BitZeny</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="multi_lang.js"></script>
+    <meta property="og:title" content="Electrum for BitZeny">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Lightweight BitZeny client">
+    <meta property="og:url" content="https://bitzeny-electrum.github.io/" />
+    <meta property="og:site_name" content="https://bitzeny-electrum.github.io/">
+    <meta property="og:image" content="https://bitzeny-electrum.github.io/electrum_zny.png">
+    <meta name="twitter:card" content="summary">
+</head>
+<body>
+    <header class="header">
+        <h1 class="site-title">Electrum for BitZeny</h1>
+        <!--<img src="electrum_zny.png" alt="ZNY_electrum_img">-->
+        <p class="site-description">Lightweight BitZeny client</p>
+        <div class="accbox">
+            <input type="checkbox" id="label1" class="cssacc" />
+            <label for="label1"><i class="fas fa-language"></i> Language</label>
+
+            <div class="accshow">
+                <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')">
+                <label for="sJa">日本語</label>
+                <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+                <label for="sEn">English</label>
+                <!--<input type="radio" name="langKbn" id="sZh" onClick="langSet('zh')">
+                <label for="sZh">中文</label>-->
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <h2 class="heading" lang="ja">概要</h2>
+        <h2 class="heading" lang="en">About</h2>
+        <!--翻訳班が出来れば中国語版等作成する-->
+        <div class="about-others">
+            <div class="about-box">
+                <span class="phone-br">
+                <div><i class="about-icon fas fa-sync-alt"></i></div>
+                <h3 class="about-title" lang="ja">同期不要</h3>
+                <h3 class="about-title" lang="en">Not need for sync</h3>
+                </span>
+            </div>
+            <div class="about-box">
+                <span class="phone-br">
+                <div><i class="about-icon fas fa-globe"></i></div>
+                <h3 class="about-title" lang="ja">いつでもどこでも</h3>
+                <h3 class="about-title" lang="en">Anytime, anywhere</h3>
+                </span>
+            </div>
+            <div class="about-box">
+                <span class="phone-br">
+                <div><i class="about-icon fas fa-key"></i></div>
+                <h3 class="about-title" lang="ja">SegWitに対応</h3>
+                <h3 class="about-title" lang="en">SegWit</h3>
+                </span>
+            </div>
+        </div>
+        <div class="about-others">
+            <div class="about-box">
+                <span class="phone-br">
+                <div><i class="about-icon fas fa-shield-alt"></i></div>
+                <h3 class="about-title" lang="ja">マルチシグネチャに対応</h3>
+                <h3 class="about-title" lang="en">Multi-signature</h3>
+                </span>
+            </div>
+            <div class="about-box">
+                <span class="phone-br">
+                <div><i class="about-icon fas fa-lock"></i></div>
+                <h3 class="about-title" lang="ja">Hardware Walletに対応</h3>
+                <h3 class="about-title" lang="en">Hardware Wallet</h3>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="event">
+        <h2 class="heading" lang="ja">イベント</h2>
+        <h2 class="heading" lang="en">Event</h2>
+            <h3 class="about-text" lang="ja"><a href="event/">アイコンコンテスト</a></h3>
+            <h3 class="about-text" lang="en"><a href="event/">Icon Contest</a></h3>
+    </section>
+    <section class="download">
+        <h2 class="heading" lang="ja">ダウンロード</h2>
+        <h2 class="heading" lang="en">Downloads</h2>
+        <div class="dl-wrapper">
+        <h3 class="dl-title">Latest Version : 3.3.4</h3>
+        <p class="dl-text">(beta-test version)</h3>
+        <div class="dl-pc">
+            <div class="dl-box">
+                <div><!--<a href="#">--><i class="dl-icon fab fa-windows"></i><!--</a>--></div>
+                <p class="dl-text">Windows(portable)</p>
+                <p class="dl-text">Coming Soon....</p>
+            </div>
+            <div class="dl-box">
+                <div><!--<a href="#">--><i class="dl-icon fab fa-windows"></i><!--</a>--></div>
+                <p class="dl-text">Windows(setup)</p>
+                <p class="dl-text">Coming Soon....</p>
+            </div>
+        </div>
+        <div class="dl-pc">
+            <div class="dl-box">
+                <div><!--<a href="#">--><i class="dl-icon fab fa-apple"></i><!--</a>--></div>
+                <p class="dl-text">Mac</p>
+                <p class="dl-text">Coming Soon....</p>
+            </div>
+            <div class="dl-box">
+                <div><!--<a href="#">--><i class="dl-icon fab fa-linux"></i><!--</a>--></div>
+                <p class="dl-text">Linux</p>
+                <p class="dl-text">Coming Soon....</p>
+            </div>
+        </div>
+        <div class="dl-phone">
+            <div class="dl-box">
+                <div><!--<a href="#">--><i class="dl-icon fab fa-android"></i><!--</a>--></div>
+                <p class="dl-text">Android</p>
+                <p class="dl-text">Coming Soon....</p>
+            </div>
+            <div class="dl-box">
+                <div><!--<a href="#">--><i class="dl-icon fab fa-app-store-ios"></i><!--</a>--></div>
+                <p class="dl-text">iOS</p>
+                <p class="dl-text">Coming Soon....</p>
+            </div>
+        </div>
+        <div class="dl-others">
+            <div class="dl-box">
+                <div><a href="https://github.com/bitzeny-electrum/electrum-zny"><i class="dl-icon fab fa-github"></i></a></div>
+                <p class="dl-text">Source Code</p>
+            </div>
+            <div class="dl-box">
+                <div><a href="release-note/"><i class="dl-icon far fa-file-alt"></i></a></div>
+                <p class="dl-text">Release Note</p>
+            </div>
+        </div>
+        </div>
+        <p class="dl-text"><a href="old-version/">Old Version</a></p>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2019 The Electrum-ZNY developers</p>
+    </footer>
+</body>
+</html>
